@@ -1,0 +1,42 @@
+site_name: openEuler From Scratch
+
+nav:
+  - Home: "index.md"
+  - "HOME":
+      - "Overview": "./HOME/Overview.md"
+      - "Packages": "./HOME/Packages.md"
+  - "BUILD":
+      - "Overview": "./HOME/Overview.md"
+      - "Packages": "./HOME/Packages.md"
+  - "INTERNAL":
+      - "Overview": "./HOME/Overview.md"
+      - "Packages": "./HOME/Packages.md"
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+
+plugins:
+  - search
+
+repo_url: https://github.com/OFSDocs
+
+repo_name: OFSDocs
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
